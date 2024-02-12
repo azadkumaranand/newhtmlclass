@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--lang is the attributes of html tag-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table </title>
+</head>
+<style>
+    table.table2{
+        border: 1px dashed green;
+        border-collapse: collapse;
+    }
+    table.table1{
+        border: 1px dashed green;
+    }
+    tr{
+        border: 1px dotted green;
+    }
+    td, th{
+        border: 1px solid green;
+        text-align: center;
+    }
+    .first_row{
+        background-color: yellow;
+    }
+    .first_col{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <!--basic Table concept-->
+    <h1>Table1</h1>
+    <table class="table1">
+        <tr class="first_row">
+            <td>Sr.No</td>
+            <td>Roll No</td>
+            <td>Name</td>
+            <td>Team</td>
+        </tr>
+        <tr>
+            <td class="first_col">1</td>
+            <td>1001</td>
+            <td>Jhon</td>
+            <td>Red</td>
+        </tr>
+        <tr>
+            <td class="first_col">2</td>
+            <td>1002</td>
+            <td>Petter</td>
+            <td>Blue</td>
+        </tr>
+        <tr>
+            <td class="first_col">3</td>
+            <td>1003</td>
+            <td>Henry</td>
+            <td>Green</td>
+        </tr>
+    </table>
+
+    <!--rowspan and colspan in Table concept-->
+    <h1>Table2</h1>
+    <table class="table2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Parts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">Shiva</td>
+                <td rowspan="2">Maths</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Science</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Ram</td>
+                <td rowspan="2">Maths</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Science</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

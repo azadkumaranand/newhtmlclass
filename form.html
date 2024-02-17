@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <h1>Fill This Form</h1>
+    <!--form can be submit by two method get and post-->
+    <!--action attributes is used to specify where your form data going to submit-->
+    <!--if in your form there is input type file then you have to choose method type post with ectype='multipart/form-data'-->
+    <form method="post" action="../html/index.html" enctype="multipart/form-data">
+        <input type="text" placeholder="Enter your name" name="name" value="azad">
+        <input type="number" placeholder="Enter age" min="0" max="10" name="age">
+        <input type="color" name="color">
+        <input type="file" name="file">
+        <input type="range" name="range" min="0" value="0" max="70">
+        <input type="hidden" name="range" min="0" value="0" max="70">
+        <input type="password" name="range">
+        <input type="date" name="range">
+        <input type="time" name="range">
+        <input type="email" name="range">
+        <!--Radio button-->
+        <p>choose your branch</p>
+        <input type="radio" name="branch" value="civil">Civil
+        <input type="radio" name="branch" value="civil">Mechanical
+        <input type="radio" name="branch" value="civil">CS
+
+        <!--checkbox button-->
+        <p>choose your Language</p>
+        <input type="checkbox" name="branch" value="hindi">Hindi
+        <input type="checkbox" name="branch1" value="english">English
+        <input type="checkbox" name="branch2" value="urdu">Urdu
+
+        
+    </form>
+</body>
+</html>

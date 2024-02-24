@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    min-height: 70vh;
+    background-color: rgb(18, 17, 17);
+    padding: 20px;
+    margin: 50px;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+.container2{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;/*center horizontally if flex direction is row*/
+}
+.container3{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;/*center vertically if flex direction is row*/
+}
+.container4{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;/*center vertically if flex direction is row*/
+    justify-content: center;/*center horizontally if flex direction is row*/
+}
+.box{
+    width: 300px;/*200px*/
+    height: 300px;/*200px*/
+    background-color: rgb(209, 209, 209);
+   padding: 100px;
+   border-width: 5px;
+   border-color: red;
+   border-style: solid;
+   /*border-style: solid;
+   border-style: dotted;*/
+}
+.box1{
+   border-style: dashed;
+}
+.box2{
+  /* border-radius: 50px;*/
+   border-radius: 100%;
+}
+.box3{
+   border-radius: 100%;
+}

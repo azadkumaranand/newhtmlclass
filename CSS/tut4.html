@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image in Background</title>
+</head>
+<style>
+    .container {
+        background-color: red;
+        background-image: url('images/bgimg1.jpeg');
+        height: 60vh;
+        background-repeat: no-repeat;
+        /* background-size: 1500px; */
+        /* background-size: contain; */
+        /* background-size: 100%; */
+        background-size: cover;
+        /* background-position: center; */
+        background-position: 100px 170px;
+    }
+
+    .container2 {
+        background-image: url('images/bgimg3.jpg');
+        height: 100vh;
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+        background-position: 170px 0;
+    }
+
+    .container3 {
+        background: linear-gradient(rgba(212, 189, 14, 0.4), rgba(55, 143, 67, 0.7)), url('images/bgimg4.jpg');
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container4 {
+        /* background: red; */
+        /* background: linear-gradient(to top, red, blue, green, cyan); */
+        background-color: rgba(255, 0, 0);
+        background-color: rgba(0, 255, 0);
+        /* background-color: rgba(0, 20, 255, opacity); */
+        background-color: rgba(0, 20, 255, 0.5);
+        /* to top, to bottom, to right, to left, 34deg, 145deg, -98deg */
+        height: 100vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container5{
+        background: repeating-linear-gradient(red 5%, blue 15%, yellow 20%);
+        height: 50vh;
+    }
+    .container5{
+        background: repeating-radial-gradient(red 5%, blue 15%, yellow 20%);
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <h1>Image in Background</h1>
+    <div class="container">
+
+    </div>
+    <div class="container2">
+        <h1>Hello Guys how are you!</h1>
+        <h1>Hello Guys how are you!</h1>
+        <h1>Hello Guys how are you!</h1>
+        <h1>Hello Guys how are you!</h1>
+        <h1 style="width: 40%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatem, in modi
+            nulla at praesentium animi consequatur mollitia nobis dolorem reprehenderit distinctio qui nemo perferendis
+            saepe pariatur accusamus eaque doloremque corrupti unde dolor, aperiam et aliquam. Itaque delectus
+            voluptatibus deserunt, quam molestias deleniti, pariatur corporis illum cumque eaque, quae nihil.</h1>
+    </div>
+    <div class="container3">
+
+    </div>
+    <div class="container4">
+        <!-- <h1>heijfwoijoids</h1> -->
+    </div>
+    <div class="container5">
+        <!-- <h1>heijfwoijoids</h1> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: Sticky</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* .contianer1{
+        height: 100vh;
+        background-color: yellow;
+    }
+    .contianer2{
+        height: 100vh;
+        background-color: red;
+    }
+    .contianer3{
+        height: 100vh;
+        background-color: green;
+    }
+    .contianer4{
+        height: 100vh;
+        background-color: black;
+    }
+    .sidebar{
+        height: 100vh;
+        background-color: cyan;
+    }
+    .navbar{
+        width: 40%;
+        height: 100px;
+        background-color: rgb(219, 0, 186);
+        position: sticky;
+        top: calc((100vh - 100px)/2);
+    } */
+    /* select with help of nth-child selector  */
+    div:nth-child(1){
+        height: 100vh;
+        background-color: yellow;
+    }
+    div:nth-child(2){
+        height: 100vh;
+        background-color: red;
+    }
+    div:nth-child(3){
+        height: 100vh;
+        background-color: green;
+    }
+    div:nth-child(4){
+        height: 100vh;
+        background-color: black;
+    }
+    div:nth-child(5){
+        width: 40%;
+        height: 100px;
+        background-color: rgb(219, 0, 186);
+        position: sticky;
+        top: calc((100vh - 100px)/2);
+    }
+</style>
+<body>
+    <!-- position fiexed -->
+    <div class="contianer1"></div>
+    <div class="contianer2"></div>
+    <div class="contianer3"></div>
+    <div class="navbar"></div>
+    <div class="contianer4"></div>
+    <div class="sidebar"></div>
+</body>
+</html>

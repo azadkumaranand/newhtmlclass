@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-container{
+    background-image: url('https://templatemo.com/templates/templatemo_573_eduwell/assets/images/header-bg.png');
+    height: 110px;
+    /* background-size: cover; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-position: -100px 0; */
+    background-position: center;
+}
+
+.navbar-box{
+    /* background-color: red; */
+    height: inherit;
+    width: 85%;
+    margin: auto;
+    /* position: relative;
+    left: 7.5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links{
+    width: 50%;
+    /* background-color: red; */
+}
+
+.nav_links ul{
+    /* list-style: circle; */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_links ul li a{
+    /* text-decoration: line-through;
+    text-decoration:overline;
+    text-decoration:underline; */
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    /* background-color: red; */
+    height: 400px;
+}
+
+.box1{
+    width: 85%;
+    height: inherit;
+    /* background-color: green; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.child1{
+    /* background-color: blue; */
+    height: 200px;
+    width: 50%;
+}
+.child2{
+    /* background-color: cyan; */
+    height: 200px;
+    width: 50%;
+}
+
+.child1 p:nth-child(1){
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #777777;
+}
+
+.child1 p:nth-child(2){
+    margin-top: 20px;
+    font-size: 64px;
+    color: #111111;
+    font-weight: 900;
+    line-height: 74px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.child1 p:nth-child(2) span{
+    font-style: normal;
+    color: #dc8cdb;
+}
+.child1 button{
+    font-size: 13px;
+    color: #fff;
+    background: rgb(219, 138, 222);
+    background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+}

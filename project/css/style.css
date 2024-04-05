@@ -12,7 +12,7 @@ body{
     background-image: url('https://templatemo.com/templates/templatemo_573_eduwell/assets/images/header-bg.png');
     height: 110px;
     /* background-size: cover; */
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     /* background-position: -100px 0; */
     background-position: center;
@@ -55,12 +55,14 @@ body{
 
 .container{
     /* background-color: red; */
-    height: 560px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .box1{
     width: 85%;
-    height: inherit;
+    height: 90vh;
     /* background-color: green; */
     margin: auto;
     display: flex;
@@ -80,10 +82,19 @@ body{
     justify-content: center;
     position: relative;
 }
-.child1 img:nth-child(4){
+body{
+    /* background-color: rebeccapurple; */
+}
+body .right-asset-image{
     position: absolute;
-    left: -110px;
-    bottom: -250px;
+    right: -50px;
+    top: 30%;
+    z-index: -1;
+}
+body .left-asset-image{
+    position: absolute;
+    left: 0px;
+    top: 85%;
     z-index: -1;
 }
 .child2{
@@ -518,11 +529,18 @@ input:focus{
     color: white;
 }
 
+.menubar{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
 /* Media query for responsiveness */
 
 @media(max-width: 1215px){
     .box1{
         width: 90%;
+        height: inherit;
     }
     .learn-box{
         flex-direction: column;
@@ -539,9 +557,13 @@ input:focus{
     .box1{
         flex-direction: column;
     }
-    .container{
-        margin-bottom: 400px;
+    body .right-asset-image{
+        top: 85%;
+        right: 50px;
     }
+    /* .container{
+        margin-bottom: 400px;
+    } */
     .child1{
         text-align: center;
         width: 90%;
@@ -568,4 +590,45 @@ input:focus{
     .course-box{
         flex-direction: column;
     }
+    .course-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .course-content{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .footer{
+        margin-top: 100px;
+    } 
+    .navbar-container{
+        height: 80px;
+    }
 }
+
+@media(max-width: 970px){
+    .nav_links{
+        width: 65%;
+    }
+}
+
+@media(max-width: 790px){
+    .nav_links{
+        display: none;
+    }
+    .menubar{
+        display: block;
+    }
+    .learn-about{
+        flex-direction: column;
+    }
+    .learn-about div:nth-child(1) img{
+        width: 100%;
+    }
+    .learn-about div:nth-child(2){
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+

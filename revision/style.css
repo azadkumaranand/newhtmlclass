@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    height: 100vh;
+    background-image: url('https://templatemo.com/templates/templatemo_574_mexant/assets/images/slide-01.jpg');
+}
+
+.navbar-container{
+    height: 120px;
+    /* background-color: red; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+.navbar-box{
+    width: 85%;
+    height: inherit;
+    /* background-color: blue; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links{
+    width: 50%;
+    /* background: yellow; */
+}
+
+.nav_links ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links ul li{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    text-transform: capitalize;
+}
+
+.contact-btn{
+    font-size: 14px;
+    color: #fff;
+    background-color: #43ba7f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.header-content{
+    height: calc(100vh - 120px);
+}
+
+.content-box{
+    width: 85%;
+    height: inherit;
+    /* background-color: black; */
+    margin: auto;
+}
+
+.text-content{
+    width: 60%;
+    /* background-color: #43ba7f; */
+}
+
+.text-content p:nth-child(1){
+    font-size: 56px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+
+.divider{
+    width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.text-content p:nth-child(3){
+    color: #fff;
+    margin-bottom: 50px;
+}
